@@ -1,0 +1,200 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+* {
+    box-sizing: border-box;
+  }
+
+  .column {
+    float: left;
+    padding: 10px;
+    height: 100%;
+  }
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* my style */
+  .left {
+      background-color: orange;
+      width: 3%;
+      height: 1356px;
+      position: relative;
+      top: 0;
+      bottom: 0;
+  }
+  .middle {
+      background-color: rgb(56, 56, 56);
+      width: 35%;
+      position: relative;
+  }
+  .right {
+      background-color: white;
+      width: 62%;
+  }
+  
+  .middle img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      box-shadow: 0 0 0 5px rgb(56, 56, 56), 0 0 0 10px orange;
+      position: relative;
+      left: 30%;
+      margin-top: 35px;
+  }
+  .middle h1, h3{
+      color: white;
+      text-align: center;
+  }
+  .kontak {
+      padding-left: 20px;
+  }
+  .hr1 {
+      height: 2px;
+      width: 250px;
+      border: none;
+      background-color: orange;
+  }
+  hr {
+    height: 2px;
+    border: none;
+    background-color: gray;
+}
+  .kontak svg {
+      float: left;
+      border-radius: 50%;
+      background-color: orange;
+      padding: 5px;
+      fill: white;
+      text-indent: 10px;
+      position: relative;
+      top: -10px;
+  }
+  a {
+      color: white;
+      text-decoration: none;
+      position: relative;
+      margin-left: 10px;
+  }
+a:last-child {
+    padding-bottom: 10px;
+    padding-left: 43px;
+}
+.bahasa {
+    padding-left: 20px;
+}
+.bahasa svg {
+    float: left;
+    border-radius: 50%;
+    background-color: orange;
+    padding: 5px;
+    fill: white;
+    text-indent: 10px;
+    position: relative
+}
+.bahasa h3 {
+    text-indent: 20px;
+    position: relative;
+    top: 14px;
+    font-size: 29px;
+}
+.bahasa th {
+    color: white;
+}
+.right h1 {
+    float: left;
+
+    margin-left: 30px;
+}
+.hr2 {
+    height: 5px;
+    background-color: orange;
+    position: relative;
+    top: 30px;
+    width: 600px;
+}
+.right h2 {
+    margin-left: 30px;
+}
+.right p {
+    margin-left: 30px;
+    text-align: justify;
+}
+.right table {
+    width: 100%;
+    text-align: left;
+    margin-left: 30px;
+}
+.right svg {
+    border-radius: 50%;
+      background-color: orange;
+      padding: 5px;
+      fill: white;
+}
+.right h1:last-child {
+    color: white;
+    text-shadow: 0 10px 5px black, 0 0 5px black, 0 0 5px black, 0 0 5px black;
+}
+
+@media (max-width: 1000px) {
+    .topbar {
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 50px;
+        background-color: rgb(46, 46, 46);
+        margin: 0;
+        border-bottom: 5px solid rgb(0, 0, 0);
+    }
+    .topbar p {
+        color: white;
+        text-align: center;
+        position: relative;
+        top: 10px;
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    .left {
+        display: none;
+    }
+    .middle {
+        width: 100%;
+    }
+    .middle img {
+        margin-top: 10px;
+        left: 24%;
+    }
+    .right {
+        width: 100%;
+    }
+    .right h1 {
+        margin-left: 0;
+    }
+    .hr2 {
+        width: 230px;
+        margin-right: 0;
+    }
+    .right h2 {
+        margin-left: 0;
+    }
+    .right p {
+        margin-left: 0;
+        margin-right: 10px;
+        text-align: justify;
+    }
+    .right table {
+        width: 100%;
+        text-align: left;
+        margin-left: 0;
+        line-height: 25px;
+    }
+    .right svg {
+        margin-right: 10px;
+    }
+}
