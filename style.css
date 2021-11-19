@@ -205,17 +205,17 @@ a:last-child {
         padding: 0;
     }
     .right h1 {
-        margin-left: 0;
+        margin-left: 10px;
     }
     .hr2 {
         width: 230px;
         margin-right: 0;
     }
     .right h2 {
-        margin-left: 0;
+        margin-left: 10px;
     }
     .right p {
-        margin-left: 0;
+        margin-left: 10px;
         margin-right: 10px;
         text-align: justify;
     }
