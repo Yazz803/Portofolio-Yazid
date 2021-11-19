@@ -1,14 +1,16 @@
 body {
     margin: 0;
+    margin-right: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 * {
     box-sizing: border-box;
+    margin-right: 0;
   }
-
   .column {
     float: left;
     padding: 10px;
+    margin: 0;
     height: 100%;
   }
   /* Clear floats after the columns */
@@ -22,19 +24,19 @@ body {
   .left {
       background-color: orange;
       width: 3%;
-      height: 1356px;
+      height: 1232px;
       position: relative;
       top: 0;
       bottom: 0;
   }
   .middle {
       background-color: rgb(56, 56, 56);
-      width: 35%;
+      width: 34%;
       position: relative;
   }
   .right {
       background-color: white;
-      width: 62%;
+      width: 63%;
   }
   
   .middle img {
@@ -55,14 +57,17 @@ body {
   }
   .hr1 {
       height: 2px;
-      width: 250px;
+      width: 50%;
+      position: relative;
+      right: 25%;
       border: none;
+      
       background-color: orange;
   }
   hr {
     height: 2px;
     border: none;
-    background-color: gray;
+    background-color: rgba(128, 128, 128, 0.555);
 }
   .kontak svg {
       float: left;
@@ -73,12 +78,16 @@ body {
       text-indent: 10px;
       position: relative;
       top: -10px;
+      width: 35px;
+      height: 35px;
+      transition: .10s;
   }
   a {
       color: white;
       text-decoration: none;
       position: relative;
       margin-left: 10px;
+      transition: .10s;
   }
 a:last-child {
     padding-bottom: 10px;
@@ -125,7 +134,7 @@ a:last-child {
     text-align: justify;
 }
 .right table {
-    width: 100%;
+    width: 90%;
     text-align: left;
     margin-left: 30px;
 }
@@ -139,6 +148,21 @@ a:last-child {
     color: white;
     text-shadow: 0 10px 5px black, 0 0 5px black, 0 0 5px black, 0 0 5px black;
 }
+
+/* CSS3 transition */
+
+    .kontak a:hover {
+        font-size: 20px;
+        transition: .10s;
+        font-weight: bold;
+    }
+    .kontak svg:hover {
+        width: 45px;
+        height: 45px;
+        transition: .10s;
+    }
+
+/* End */
 
 @media (max-width: 1000px) {
     .topbar {
@@ -165,13 +189,20 @@ a:last-child {
     }
     .middle {
         width: 100%;
+        margin: 0;
+        padding: 0;
     }
     .middle img {
-        margin-top: 10px;
-        left: 24%;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        left: 0;
     }
     .right {
         width: 100%;
+        margin: 0;
+        padding: 0;
     }
     .right h1 {
         margin-left: 0;
